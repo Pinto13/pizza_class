@@ -1,0 +1,118 @@
+
+
+
+
+chee = 4.0
+pepp = 5.0
+haww = 5.5
+fry = 3
+chf = 3.5
+buf = 3.5
+cola = 1.5
+h20 = 0.0
+te = 1.5
+
+pizza = str(input('would you like a Cheese, Pepperoni, or Hawaiian pizza? '))
+Cheese = "cheese" or "Cheese"
+
+if pizza == Cheese:
+    total = chee
+    sides = str(input('For sides, would you like Fries, Cheese Fries or buffalo Wings? '))
+    if sides == 'Fries':
+        total= chee + fry
+        drinks = str(input('Would like Soda, Water, or Tea? '))
+        if drinks == 'Soda':
+            total = chee + fry + cola
+        elif drinks == 'Water':
+            total = chee + fry + h20
+        elif drinks == 'Tea':
+            total = chee + fry + te
+         
+    elif sides == 'cheese fries':
+        total= chee + chefr
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda':
+            total = chee + chf + cola
+        elif drinks == 'Water':
+            total = chee + chf + h20
+        elif drinks == 'Tea':
+            total = chee + chf + te
+         
+    elif sides == 'buffalo wings':
+        total= chee + buf
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda':
+            total = chee + buf + cola
+        elif drinks == 'Water':
+            total = chee + buf + h20
+        elif drinks == 'Tea':
+            total = chee + buf + te
+         
+elif pizza == 'Pepperoni':
+    total= pepp
+    sides = str(input('For sides, would you like Fries, Cheese Fries or buffalo Wings?'))
+    if sides == 'Fries':
+        total= pepp + fry
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda' :
+            total = pepp + fry + cola
+        elif drinks == 'Water':
+            total = pepp + fry + h20
+        elif drinks == 'Tea':
+            total = pepp + fry + te
+         
+    elif sides == 'cheese fries':
+        total= pepp + chefr
+        drinks = input('Would like Soda, Water, or Tea?')
+        if drinks == 'Soda':
+            total = pepp + chf + cola
+        elif drinks == 'Water':
+            total = pepp + chf + h20
+        elif drinks == 'Tea':
+            total = pepp + chf + te
+         
+    elif sides == 'buffalo wings':
+        total= pepp + fry
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda':
+            total = pepp + buf + cola
+        elif drinks == 'Water':
+            total = pepp + buf + h20
+        elif drinks == 'Tea':
+            total = pepp + buf + te
+         
+elif pizza == 'Hawaiian':
+    total= haww
+    sides = str(input('For sides, would you like Fries, Cheese Fries or buffalo Wings?'))
+    if sides == 'Fries':
+        total= hawe + fry
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda' :
+            total = haww + fry +cola
+        elif drinks == 'Water':
+            total = haww + fry +h20
+        elif drinks == 'Tea':
+            total = haww + fry +te
+         
+    elif sides == 'cheese fries':
+        total= haww + chefr
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda':
+            total = haww + chf +cola
+        elif drinks == 'Water':
+            total = haww + chf +h20
+        elif drinks == 'Tea':
+            total = haww + chf +te
+         
+    elif sides == 'buffalo wings':
+        total= haww + fry
+        drinks = str(input('Would like Soda, Water, or Tea?'))
+        if drinks == 'Soda':
+            total = haww + buf +cola
+        elif drinks == 'Water':
+            total = haww + buf +h20
+        elif drinks == 'Tea':
+            total = haww + buf +te
+
+         
+print('Your total is: ', total)
